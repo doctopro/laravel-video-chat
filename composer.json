@@ -1,5 +1,5 @@
 {
-    "name": "wqqas1/laravel-video-chat",
+    "name": "jgizinski/laravel-video-chat",
     "description": "Laravel Video Chat using Socket.IO and WebRTC",
     "type": "library",
     "license": "MIT",
@@ -21,9 +21,9 @@
         "php" : ">=7.1",
         "predis/predis": "^1.1",
         "dflydev/apache-mime-types": "^1.0",
-        "illuminate/support": "^5.6",
-        "illuminate/database": "^5.6",
-        "illuminate/contracts": "^5.6"
+        "illuminate/support": "~6.0",
+        "illuminate/database": "~6.0",
+        "illuminate/contracts": "~6.0"
     },
     "autoload": {
         "psr-4": {
