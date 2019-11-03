@@ -248,7 +248,7 @@ class ConversationRepository extends BaseRepository
 
             $data['files'] = $conversation->messages()->find($created->id)->files()->get();
 
-            broadcast(new NewConversationMessage($data['text'], $data['channel'], $data['files']));
+            broadcast(new NewConversationMessage($data['text'], $data['channel'], $data['files'], check()->user()));
 
             return true;
         }

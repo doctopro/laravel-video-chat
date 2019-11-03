@@ -8,6 +8,7 @@ use Illuminate\Broadcasting\PresenceChannel;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Foundation\Auth\User;
 
 class NewConversationMessage implements ShouldBroadcast
 {
@@ -26,17 +27,24 @@ class NewConversationMessage implements ShouldBroadcast
     private $files;
 
     /**
+     * @var User
+     */
+    private $user;
+
+    /**
      * Create a new event instance.
      *
      * @param $text
      * @param $channel
      * @param array $files
+     * @param User $user
      */
-    public function __construct($text, $channel, $files = [])
+    public function __construct($text, $channel, $files = [], $user = null)
     {
         $this->text = $text;
         $this->channel = $channel;
         $this->files = $files;
+        $this->user = $user;
     }
 
     /**
@@ -53,7 +61,7 @@ class NewConversationMessage implements ShouldBroadcast
     {
         return [
             'text'       => $this->text,
-            'sender'     => check()->user(),
+            'sender'     => $this->user(),
             'files'      => $this->files,
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ];
