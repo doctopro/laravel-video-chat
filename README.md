@@ -3,7 +3,7 @@ Laravel Video Chat using Socket.IO and WebRTC
 
 Working on Laravel 6!
 
-## Installation
+## Installation 
 ```php
 composer require jgizinski/laravel-video-chat
 ```
