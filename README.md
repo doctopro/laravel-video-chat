@@ -1,10 +1,11 @@
-# Laravel Video Chat
+# Laravel Video Chat (fork from wqqas1/laravel-video-chat)
 Laravel Video Chat using Socket.IO and WebRTC
 
+Working on Laravel 6!
 
 ## Installation
 ```php
-composer require wqqas1/laravel-video-chat
+composer require jarekgiz/laravel-video-chat
 ```
 
 Laravel 5.5 uses Package Auto-Discovery, so doesn't require you to manually add the ServiceProvider.
