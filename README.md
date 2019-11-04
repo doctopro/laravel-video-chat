@@ -5,7 +5,7 @@ Working on Laravel 6!
 
 ## Installation
 ```php
-composer require jarekgiz/laravel-video-chat
+composer require jgizinski/laravel-video-chat
 ```
 
 Laravel 5.5 uses Package Auto-Discovery, so doesn't require you to manually add the ServiceProvider.
