@@ -61,7 +61,7 @@ class NewConversationMessage implements ShouldBroadcast
     {
         return [
             'text'       => $this->text,
-            'sender'     => $this->user(),
+            'sender'     => $this->user,
             'files'      => $this->files,
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ];
