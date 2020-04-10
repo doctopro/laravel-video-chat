@@ -1,14 +1,12 @@
 {
-    "name": "jgizinski/laravel-video-chat",
+    "name": "doctopro/laravel-video-chat",
     "description": "Laravel Video Chat using Socket.IO and WebRTC",
     "type": "library",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Waqas Ahmad",
-            "email": "wqqas1978@gmail.com"
-        }
-    ],
+    "authors": [{
+        "name": "Juan Moscoso",
+        "email": "jmoscoso@doctopro.com"
+    }],
     "keywords": [
         "laravel",
         "socket.io",
@@ -18,8 +16,8 @@
         "webrtc"
     ],
     "require": {
-        "php" : ">=7.1",
-        "predis/predis": "^1.1",
+        "php": "^7.2",
+        "predis/predis": "^1.1.1",
         "dflydev/apache-mime-types": "^1.0",
         "illuminate/support": "~6.0",
         "illuminate/database": "~6.0",

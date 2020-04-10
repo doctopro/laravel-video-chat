@@ -4,8 +4,6 @@ namespace Wqqas1\LaravelVideoChat\Models\Conversation;
 
 use Illuminate\Database\Eloquent\Model;
 
-use Mpociot\Firebase\SyncsWithFirebase;
-
 use App\Booking;
 
 use Wqqas1\LaravelVideoChat\Models\Conversation\Relationship\ConversationRelationship;
@@ -13,7 +11,6 @@ use Wqqas1\LaravelVideoChat\Models\Conversation\Relationship\ConversationRelatio
 class Conversation extends Model
 {
     use ConversationRelationship;
-    use SyncsWithFirebase;
 
     protected $table;
 
