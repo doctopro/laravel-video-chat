@@ -3,7 +3,6 @@
 namespace Wqqas1\LaravelVideoChat\Models\Group\Conversation;
 
 use Illuminate\Database\Eloquent\Model;
-
 use Wqqas1\LaravelVideoChat\Models\Group\Conversation\Relationship\GroupConversationRelationship;
 
 class GroupConversation extends Model
